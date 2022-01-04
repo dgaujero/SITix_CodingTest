@@ -1,0 +1,18 @@
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+.ticketsContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.ticketsData{
+    width: 75%;
+}
+
+.promo{
+    width: 25%;
+}
