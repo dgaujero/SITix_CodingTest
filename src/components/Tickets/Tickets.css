@@ -1,0 +1,72 @@
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+.ticketsContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.ticketsData{
+    width: 75%;
+}
+
+.promo{
+    width: 25%;
+}
+
+.promoMobile{
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .ticketsContainer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .buttons{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .buttons button{
+        border-radius: 20px;
+        margin: 0px 2px 0px 2px;
+        box-shadow: 2px 2px 12px 2px #000000;
+        border: 1px solid;
+    }
+
+    .promo{
+        display: none;
+    }
+
+    .promoMobile{
+        display: flex;
+        width: 100%;
+    }
+
+    .ticketsData{
+        width: 100%;
+    }
+
+    .ticket{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
