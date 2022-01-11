@@ -1,6 +1,6 @@
 .container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .ticketsContainer{
@@ -19,6 +19,27 @@
 
 .promoMobile{
     display: none;
+}
+
+.buttons{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons button{
+    color: white;
+    background-color: #807c76;
+    border-radius: 20px;
+    margin: 15px 10px 5px 10px;
+    box-shadow: 2px 2px 12px 2px #000000;
+    border: none;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
 }
 
 .buttons button:active{

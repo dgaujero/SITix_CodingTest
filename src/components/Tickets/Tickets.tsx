@@ -46,12 +46,13 @@ const Tickets: React.FC = () => {
                 <Promo />
             </div>
 
+            <div className='buttons'>
+                <button className='nameBTN' onClick={() => toggleMe('name')}>By Name</button>
+                <button className='priceBTN' onClick={() => toggleMe('price')}>By Price</button>
+            </div>
+
             <div className='ticketsContainer'>
 
-                <div className='buttons'>
-                    <button className='nameBTN' onClick={() => toggleMe('name')}>By Name</button>
-                    <button className='priceBTN' onClick={() => toggleMe('price')}>By Price</button>
-                </div>
 
                 <div className='ticketsData'>
                 
@@ -97,12 +98,13 @@ const Tickets: React.FC = () => {
 
                 </div>
 
-            </div>
-
-
+            
             <div className='promo'>
                 <Promo />
             </div>
+            </div>
+
+
 
         </div>
     )
