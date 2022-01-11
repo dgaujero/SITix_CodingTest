@@ -47,12 +47,11 @@ const Tickets: React.FC = () => {
             </div>
 
             <div className='buttons'>
-                <button className='nameBTN' onClick={() => toggleMe('name')}>By Name</button>
-                <button className='priceBTN' onClick={() => toggleMe('price')}>By Price</button>
+                <button className='nameBTN' type='button' autoFocus onClick={() => toggleMe('name')}>By Name</button>
+                <button className='priceBTN' type='button' onClick={() => toggleMe('price')}>By Price</button>
             </div>
 
             <div className='ticketsContainer'>
-
 
                 <div className='ticketsData'>
                 
@@ -65,8 +64,9 @@ const Tickets: React.FC = () => {
                                     <p>{ticket.city} {ticket.name}</p>
                                 </div>
 
-                                <div>
+                                <div className='ticketPrice'>
                                     <p>from ${Math.floor(Math.random() * 200) + 50}</p>
+                                    <button className='ticketBTN'>See Tickets</button>
                                 </div>
 
                             </li>
@@ -85,8 +85,9 @@ const Tickets: React.FC = () => {
                                     <p>{ticket.city} {ticket.name}</p>
                                 </div>
 
-                                <div>
+                                <div className='ticketPrice'>
                                     <p>from ${Math.floor(Math.random() * 200) + 50}</p>
+                                    <button className='ticketBTN'>See Tickets</button>
                                 </div>
 
                             </li>
