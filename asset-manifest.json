@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/SITix_CodingTest/static/css/main.c297e862.css",
-    "main.js": "/SITix_CodingTest/static/js/main.fc921844.js",
+    "main.css": "/SITix_CodingTest/static/css/main.f98055f2.css",
+    "main.js": "/SITix_CodingTest/static/js/main.a5b658ea.js",
     "static/js/787.070db070.chunk.js": "/SITix_CodingTest/static/js/787.070db070.chunk.js",
     "static/media/fbPlayerHero.jpg": "/SITix_CodingTest/static/media/fbPlayerHero.42b476096c3c6bc5b65a.jpg",
     "index.html": "/SITix_CodingTest/index.html",
-    "main.c297e862.css.map": "/SITix_CodingTest/static/css/main.c297e862.css.map",
-    "main.fc921844.js.map": "/SITix_CodingTest/static/js/main.fc921844.js.map",
+    "main.f98055f2.css.map": "/SITix_CodingTest/static/css/main.f98055f2.css.map",
+    "main.a5b658ea.js.map": "/SITix_CodingTest/static/js/main.a5b658ea.js.map",
     "787.070db070.chunk.js.map": "/SITix_CodingTest/static/js/787.070db070.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c297e862.css",
-    "static/js/main.fc921844.js"
+    "static/css/main.f98055f2.css",
+    "static/js/main.a5b658ea.js"
   ]
 }
