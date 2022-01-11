@@ -15,8 +15,11 @@ const Tickets: React.FC = () => {
         setSortBy(val);
     }
 
+    let teams: Array<string> = [];
+
     interface Team {
         full_name: string;
+
     }
     
 
