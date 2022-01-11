@@ -21,6 +21,13 @@
     display: none;
 }
 
+.buttons button:active{
+    background-color: #9a948e;
+}
+.buttons button:focus{
+    background-color: #9a948e;
+}
+
 @media only screen and (max-width: 600px) {
 
     .ticketsContainer{
@@ -53,6 +60,7 @@
 
     .ticketsData{
         width: 100%;
+        margin-top: 10px;
     }
 
     .ticket{

@@ -9,6 +9,7 @@
     margin-left: 1em;
     height: auto;
     width: 200px;
+    margin-bottom: 1em;
 }
 
 .footballHero {
@@ -32,7 +33,9 @@
 .topLeft {
     position: absolute;
     top: 8px;
-    left: 16px;
+    left: 40px;
+    font-size: 40px;
+    font-weight: 900;
 }
 
 .inputContainer{
@@ -46,6 +49,13 @@
     text-align: center;
     align-items: center;
     background-color: white;
+    width: 400px;
+    justify-content: space-between;
+}
+
+.inputField {
+    padding-left: 5px;
+    font-size: 16px;
 }
 
 .inputContainer2{
@@ -68,6 +78,14 @@ input:focus{
     width: fit-content;
     align-items: center;
     justify-content: center;
+    border-radius: 10px 5px 5px 10px;
+    padding: 0px 10px 0px 10px;
+    color: white;
+    font-weight: bolder;
+}
+
+.location p{
+    margin-left: 5px;
 }
 
 
@@ -75,6 +93,7 @@ input:focus{
     html{
         font-size: 16px;
     }
+
     
     .waveContainer{
         width: 100%;
@@ -95,20 +114,30 @@ input:focus{
     }
 
     .inputContainer2{
-        display: flex;
-        justify-content: center;
-        align-items: center;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 100%;
+
+        border: black solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        border-radius: 10px;
+        background-color: white;
+    }
+
+    .location{
+        font-size: 15px;
+        display: flex;
+        flex-direction: row;
+        height: 35px;
+        font-size: 12px;
     }
 
     .inputField2 input{
-        width: 300px;
         border-radius: 10px;
-        height: 20px;
     }
 
     .inputField2{
@@ -116,16 +145,16 @@ input:focus{
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         width: 100%;
     }
 
     .topLeft {
         position: absolute;
-        top: 1px;
-        left: 8px;
+        top: -2px;
+        left: 10px;
+        font-weight: 900;
+        font-size: 16px;
     }
-
     
-      
 }

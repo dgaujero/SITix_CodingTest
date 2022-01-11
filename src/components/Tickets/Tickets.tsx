@@ -15,8 +15,10 @@ const Tickets: React.FC = () => {
         setSortBy(val);
     }
 
-
-    console.log(data)
+    interface Team {
+        full_name: string;
+    }
+    
 
     useEffect(() => {
         const requestOptions = {
@@ -29,11 +31,12 @@ const Tickets: React.FC = () => {
                 "x-rapidapi-key": "e5d8563997mshcfb030c802400d3p1ec262jsn6864acf2d34a"
             },
         };
-
+        
         fetch("https://free-nba.p.rapidapi.com/teams?page=0", requestOptions)
-            .then(response => response.json())
-            .then(ticketData => setData(ticketData.data))
+        .then(response => response.json())
+        .then(ticketData => setData(ticketData.data))
     }, [])
+    console.log(data)
 
 
     return (
@@ -46,24 +49,23 @@ const Tickets: React.FC = () => {
             <div className='ticketsContainer'>
 
                 <div className='buttons'>
-                    <button onClick={() => toggleMe('name')}>By Name</button>
-                    <button onClick={() => toggleMe('price')}>By Price</button>
+                    <button className='nameBTN' onClick={() => toggleMe('name')}>By Name</button>
+                    <button className='priceBTN' onClick={() => toggleMe('price')}>By Price</button>
                 </div>
 
                 <div className='ticketsData'>
-                    {/* <p>Ticket Data</p> */}
-
+                
                     {sort === 'name' && data.map(ticket => (
-                        <div >
+                        <div key={ticket.name}>
 
-                            <li key={ticket.name} className='ticket'>
+                            <li className='ticket'>
 
                                 <div>
                                     <p>{ticket.city} {ticket.name}</p>
                                 </div>
 
                                 <div>
-                                    <p>from $price</p>
+                                    <p>from ${Math.floor(Math.random() * 200) + 50}</p>
                                 </div>
 
                             </li>
@@ -74,16 +76,16 @@ const Tickets: React.FC = () => {
                     ))}
 
                     {sort === 'price' && data.map(ticket => (
-                        <div >
+                        <div key={ticket.name} >
 
-                            <li key={ticket.name} className='ticket'>
+                            <li className='ticket'>
 
                                 <div>
                                     <p>{ticket.city} {ticket.name}</p>
                                 </div>
 
                                 <div>
-                                    <p>from $$price</p>
+                                    <p>from ${Math.floor(Math.random() * 200) + 50}</p>
                                 </div>
 
                             </li>

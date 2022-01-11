@@ -17,24 +17,23 @@ const Header: React.FC = () => {
         <div className="centered inputContainer">
 
           <div className="inputField">
-            <input placeholder="Enter Location" />
+            <input placeholder="" />
           </div>
           <div className="location">
             <i className="fa fa-map-marker" style={{ color: "white" }}></i>
-            <p>New York, New York</p>
+            <p>New York, NY</p>
           </div>
 
         </div>
 
         <div className="inputContainer2">
           <div className="inputField2">
-            <input placeholder="Enter Location" />
-            {/* <button type="submit">New York, New York </button> */}
+            <input placeholder="" />
           </div>
-          {/* <div className="location2">
+          <div className="location">
             <i className="fa fa-map-marker" style={{ color: "white" }}></i>
-            <p>New York, New York</p>
-          </div> */}
+            <p>New York, NY</p>
+          </div>
         </div>
 
 
